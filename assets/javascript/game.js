@@ -24,11 +24,11 @@ var remainingLetters = word.length;
 console.log(word);
 console.log(answerArray);
 function setgamescreen() {
-    document.getElementById("gameBox").innerHTML = "";
+    document.getElementById("gameGame").innerHTML = "";
     var node = document.createElement("div");
     var gamenode = document.createTextNode(answerArray.join(" "));
     node.appendChild(gamenode);
-    document.getElementById("gameBox").appendChild(node);
+    document.getElementById("gameGame").appendChild(node);
 }
 if (remainingLetters > 0) {
     setgamescreen();
@@ -43,6 +43,12 @@ if (remainingLetters > 0) {
                     answerArray[j] = guess;
                     remainingLetters--;
                 }
+                // else {
+                //     var node2 = document.createElement("div");
+                //     var lettersnode = document.createTextNode(guess);
+                //     node2.appendChild(lettersnode);
+                //     document.getElementById("lettersPlayed").appendChild(node2);
+                // }
             }
         }        
         setgamescreen();

@@ -23,6 +23,11 @@ hr {
     margin: 40px;
     float: left;
 }
+#nameSuburb {
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
 #gameBox {
     height: 200px;
     width: 400px;
@@ -32,4 +37,8 @@ hr {
     font-size: 36px;
     float: left;
     padding: 200px 36px;
+    line-height: 60px;
+}
+#lettersPlayed {
+    float: left;
 }
