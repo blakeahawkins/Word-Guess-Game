@@ -24,9 +24,12 @@ hr {
     float: left;
 }
 #gameBox {
-    height: 600px;
+    height: 200px;
     width: 400px;
     border-style: solid;
     margin: 40px;
+    font-family: 'Muli', sans-serif;
+    font-size: 36px;
     float: left;
+    padding: 200px 36px;
 }

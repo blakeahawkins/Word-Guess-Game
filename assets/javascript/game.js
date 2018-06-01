@@ -23,13 +23,17 @@ for (var i = 0; i < word.length; i++){
 var remainingLetters = word.length;
 console.log(word);
 console.log(answerArray);
-if (remainingLetters > 0) {
+function setgamescreen() {
     document.getElementById("gameBox").innerHTML = "";
     var node = document.createElement("div");
     var gamenode = document.createTextNode(answerArray.join(" "));
     node.appendChild(gamenode);
     document.getElementById("gameBox").appendChild(node);
+}
+if (remainingLetters > 0) {
+    setgamescreen();
     document.onkeyup = function(event) {
+    
         var guess = event.key.toLowerCase();
         console.log(guess);
         console.log(remainingLetters);
@@ -40,6 +44,7 @@ if (remainingLetters > 0) {
                     remainingLetters--;
                 }
             }
-        }
+        }        
+        setgamescreen();
     }
 }
