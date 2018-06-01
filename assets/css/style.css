@@ -1,0 +1,32 @@
+.logo {
+    float: left;
+    height: 120px;
+    margin-left: 20px;
+}
+.title {
+    font-family: 'Muli', sans-serif;
+    font-size: 40px;
+    float: left;
+    margin: 40px;
+}
+.header {
+    clear: both;
+    margin: auto;
+}
+hr {
+    clear: both;
+}
+#imageBox {
+    height: 600px;
+    width: 400px;
+    border-style: solid;
+    margin: 40px;
+    float: left;
+}
+#gameBox {
+    height: 600px;
+    width: 400px;
+    border-style: solid;
+    margin: 40px;
+    float: left;
+}
