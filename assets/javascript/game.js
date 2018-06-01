@@ -43,6 +43,7 @@ if (remainingLetters > 0) {
                     answerArray[j] = guess;
                     remainingLetters--;
                 }
+                // Add a way to print the incorrect guess into the lettersPlayed id.
                 // else {
                 //     var node2 = document.createElement("div");
                 //     var lettersnode = document.createTextNode(guess);
@@ -53,4 +54,7 @@ if (remainingLetters > 0) {
         }        
         setgamescreen();
     }
+    // Set var for wins and add ++ for each win to the wins id div.
+    // on win, display image of city in left "imageBox" div.
+    
 }
